@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+body{
+    background-color: #8a51fc ;
+}
+
+.logo{
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+main{
+    width: 375px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 44px 24px 23px;
+}
+
+label{
+    color: #777777
+    font-size: 18px;
+}
+
+select{
+    background: white;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px ;
+}
+button{
+    background-color: #772fd3;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    height: 48px;
+    color: white;
+    font-size: 18px;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+button:active{
+    opacity: 0.6;
+}
+
+input{
+    font-size: 18px;
+}
+
+section{
+    border: 1px solid #772fd3;
+    border-radius: 20px;
+    margin: top 36px;
+    padding: 12px;
+}
