@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <script defer src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/-favicon.png" type="image/x-icon">
     <title>Conversor Trinitty</title>
 </head>
-
 <body>
+    <header class="header">EUBANK</header>
     <img class="logo" src="assets/logo.gif" alt="logo">
     <main>
-        <label for=""> Converter <b>de</b>:
-                <select>
-                    <option>R$ Real Brasileiro</option>
-
-                </select>
+        <label>Converter <b>de</b>:
+            <select name="currency-from">
+                <option value="BRL">R$ Real Brasileiro</option>
+                <option value="USD">US$ Dólar Americano</option>
+                <option value="EUR">€ Euro</option>
+                <option value="GBP">£ Libra</option>
+            </select>
         </label>
-        <label for=""> Converter <b>para<b>:
-                    <select>
-                        <option>US$ Dólar Americano</option>
-                        <option>€ Euro</option>
-
-                    </select>
+        <label>Converter <b>para</b>:
+            <select name="currency-to">
+                <option value="BRL">R$ Real Brasileiro</option>
+                <option value="USD">US$ Dólar Americano</option>
+                <option value="EUR">€ Euro</option>
+                <option value="GBP">£ Libra</option>
+            </select>
         </label>
         <label>
             Valor
-            <input placeholder="R$10.000,00">
+            <input class="input-currency" placeholder="R$10.000,00" type="number" step="0.01">
         </label>
-        <button>
-            Converter
-        </button>
-
+        <button class="convert-button">Converter</button>
         <section>
-            <div>
+            <div class="currency-box from">
                 <img src="assets/real.png" alt="logo-moeda">
-                <p>Real</p>
-                <p>R$ 0,00</p>
+                <p class="currency">Real</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
-            <img src="assets/image.png" alt="">
-            <div>
+            <img class="arrow-img" src="assets/image.png" alt="">
+            <div class="currency-box to">
                 <img src="assets/dolar.png" alt="logo-moeda">
-                <p>Dólar</p>
-                <p>US$ 0,00</p>
+                <p class="currency">Dólar</p>
+                <p class="currency-value">US$ 0,00</p>
             </div>
         </section>
     </main>
 </body>
-
 </html>
